@@ -138,7 +138,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddConstraint(
             model_name='gymprogram',
-            constraint=models.CheckConstraint(check=models.Q(('duration_days__gt', 0)), name='duration_days_gt_0'),
+            constraint=models.CheckConstraint(condition=models.Q(('duration_days__gt', 0)), name='duration_days_gt_0'),
         ),
         migrations.AlterUniqueTogether(
             name='schedule',
