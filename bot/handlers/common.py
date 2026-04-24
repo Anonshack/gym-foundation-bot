@@ -122,10 +122,10 @@ async def _check_channel_membership(bot: Bot, user_id: int) -> bool:
         return member.status in ('member', 'administrator', 'creator', 'restricted')
     except TelegramBadRequest as e:
         logger.warning(f'Subscription check failed ({e}). Make sure the bot is admin in the channel.')
-        return False
+        return True
     except Exception as e:
         logger.error(f'Subscription check error: {e}')
-        return False
+        return True
 
 
 async def _edit_or_send(callback: CallbackQuery, text: str, reply_markup=None):
