@@ -1,0 +1,19 @@
+# ─── Core ────────────────────────────────────────────────────────────────────
+Django==5.0.6
+python-decouple==3.8
+whitenoise==6.7.0
+
+# ─── Telegram bot ────────────────────────────────────────────────────────────
+aiogram==3.7.0
+aiohttp==3.9.5
+requests==2.32.3
+
+# ─── Admin theme ─────────────────────────────────────────────────────────────
+django-jazzmin==3.0.0
+
+# ─── Images ──────────────────────────────────────────────────────────────────
+Pillow==10.4.0
+
+# ─── Optional (uncomment if you want these features) ─────────────────────────
+# psycopg2-binary==2.9.9       # PostgreSQL
+# redis==5.0.7                  # Redis for FSM storage
